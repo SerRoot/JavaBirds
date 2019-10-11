@@ -12,8 +12,8 @@ public class Flock extends Birds {
 
 
     public Flock() {
-        int n = 0;
-        while (n == 0 || n == 1 || n == 2) {
+        int n = 1;
+        while (n == 1 || n == 2 || n == 3) {
             Scanner l = new Scanner(System.in);
             n = l.nextInt();
             Random random = new Random();
@@ -21,50 +21,18 @@ public class Flock extends Birds {
             xin = x+15;
             y = (random.nextInt(401))-200;
             yin = y+15;
-            if (n == 0) {
+            if (n == 1) {
                 f.add(new Macaw());
                 macnum = macnum + 1;
             }
-            if (n == 1) {
+            if (n == 2) {
                 f.add(new Penguin());
                 pengnum = pengnum + 1;
             }
-            if (n == 2) {
+            if (n == 3) {
                 f.add(new Vorobey());
                 vornum = vornum + 1;
             }
-        }
-        if (pengnum > macnum && macnum != 0) {
-            System.out.println("РџРѕРїСѓРіР°Рё СѓР»РµС‚Р°СЋС‚, РїРёРЅРіРІРёРЅС‹ СЃРёРґСЏС‚ РЅР° РІРµС‚РєРµ Рё РѕР±СЃСѓР¶РґР°СЋС‚, РєР°Рє РѕС‚С‚СѓРґР° СЃР»РµР·С‚СЊ");
-        }
-        if (pengnum < macnum && pengnum != 0) {
-            System.out.println("РџРёРЅРіРІРёРЅС‹ СѓР±РµРіР°СЋС‚, РїРѕРїСѓРіР°Рё СЃРёРґСЏС‚ РЅР° РІРµС‚РєРµ Рё СЂР°РґСѓСЋС‚СЃСЏ Р¶РёР·РЅРё");
-        }
-        if (pengnum == macnum && pengnum != 0 && macnum != 0) {
-            System.out.println("РџРёРЅРіРІРёРЅС‹ РЅР°С‡РёРЅР°СЋС‚ РґСЂР°С‚СЊСЃСЏ СЃ РїРѕРїСѓРіР°СЏРјРё");
-            Random random = new Random();
-            int fight = random.nextInt(2);
-            if (fight == 0) {
-                System.out.println("РџРёРЅРіРІРёРЅС‹ РїРѕР±РµР¶РґР°СЋС‚, РїРѕРїСѓРіР°Рё СѓР»РµС‚Р°СЋС‚");
-            }
-            if (fight == 1) {
-                System.out.println("РџРѕРїСѓРіР°Рё РїРѕР±РµР¶РґР°СЋС‚, РїРёРЅРіРІРёРЅС‹ СѓР±РµРіР°СЋС‚");
-            }
-        }
-        if (pengnum == 0 && macnum == 1) {
-            System.out.println("РџРёРЅРіРІРёРЅРѕРІ РЅРµС‚, РїРѕРїСѓРіР°Р№ РІ РѕРґРёРЅРѕС‡РµСЃС‚РІРµ СЃРёРґРёС‚ РЅР° РІРµС‚РєРµ Рё РїРѕРµС‚ РїРµСЃРЅСЋ РЎР»Р°РІС‹ - РћРґРёРЅРѕС‡РµСЃС‚РІРѕ");
-        }
-        if (macnum == 0 && pengnum == 1) {
-            System.out.println("РџРѕРїСѓРіР°РµРІ РЅРµС‚, РїРёРЅРіРІРёРЅ СЃРёРґРёС‚ РѕРґРёРЅ РѕРґРёРЅРµС€РµРЅРµРє РЅР° РІРµС‚РєРµ, РЅРµ Р·РЅР°РµС‚, РєР°Рє РѕРЅ С‚СѓРґР° Р·Р°Р±СЂР°Р»СЃСЏ Рё РїРѕРµС‚ Hello Darkness My old friend");
-        }
-        if (pengnum == 0 && macnum == 0) {
-            System.out.println("Р’ СЃС‚Р°Рµ РІРѕРѕР±С‰Рµ РЅРёРєРѕРіРѕ РЅРµС‚");
-        }
-        if (pengnum == 0 && macnum > 1) {
-            System.out.println("РџРёРЅРіРІРёРЅРѕРІ РЅРµС‚, РїРѕРїСѓРіР°Рё  СЃРёРґСЏС‚ РЅР° РІРµС‚РєРµ");
-        }
-        if (macnum == 0 && pengnum > 1) {
-            System.out.println("РџРѕРїСѓРіР°РµРІ РЅРµС‚, РїРёРЅРіРІРёРЅС‹ СЃРёРґСЏС‚ РЅР° РІРµС‚РєРµ Рё РЅРµ РїРѕРЅРёРјР°СЋС‚, РєР°Рє РѕРЅРё С‚СѓРґР° Р·Р°Р»РµР·Р»Рё");
         }
     }
     public void draw(Graphics g) {

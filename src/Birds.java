@@ -4,11 +4,8 @@ public abstract class Birds {
     public static int num=0;
     public  Birds(){
         num = num+1;
-        //System.out.println("РЇ РїС‚РёС†Р° РЅРѕРјРµСЂ "+num);
     }
-    //public fly(){
-    //  System.out.println("РЇ Р»РµС‡Сѓ");
-    //}
+
     protected   static int x = 50;
     protected   static int y = 50;
     protected int size = 30;
