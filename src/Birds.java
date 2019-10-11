@@ -3,23 +3,27 @@ import java.awt.*;
 public abstract class Birds {
     public static int num=0;
     public  Birds(){
-       num = num+1;
-        //System.out.println("Я птица номер "+num);
+        num = num+1;
+        //System.out.println("РЇ РїС‚РёС†Р° РЅРѕРјРµСЂ "+num);
     }
     //public fly(){
-      //  System.out.println("Я лечу");
+    //  System.out.println("РЇ Р»РµС‡Сѓ");
     //}
-    protected static int x ;
-    protected static int y ;
-    protected int size = 7;
+    protected   static int x = 50;
+    protected   static int y = 50;
+    protected int size = 30;
     protected Color color = Color.black;
-    public void draw(Graphics g){
-       g.setColor(color);
-       g.fillOval(x,y,size,size);
-       y += 20;
-       x += 20;
-       g.drawLine(0,200,400,200);
-       g.drawLine(200,0,200,400);
+    protected   static int xin = 50;
+    protected   static int yin = 50;
+    protected int sizein = 10;
+    protected Color colorin = Color.black;
 
+    public void draw(Graphics g){
+        g.setColor(color);
+        g.fillOval(x,y,size,size);
+        y = y +20;
+        g.setColor(colorin);
+        g.fillOval(xin,yin,sizein,sizein);
+        yin = yin+20;
     }
 }
