@@ -142,11 +142,11 @@ public class Flock extends Birds {
     }
     public void geolocation(int i){
         for(int t =0; t<=i;t++) {
-                if ((f.get(i).x)-15 > 15  || (f.get(i).x)-15 < 185 || (f.get(i).x)-30 > f.get(t).x || f.get(i).x < f.get(t).x || (f.get(i).y)-15 > 15  || (f.get(i).y)-15 < 185 || (f.get(i).y)-30 > f.get(t).y || f.get(i).y < f.get(t).y) {
+                if ((f.get(i).x)-15 > 15  || (f.get(i).x)-15 < 170 || (f.get(i).x)-30 > f.get(t).x || f.get(i).x < f.get(t).x || (f.get(i).y)-15 > 15  || (f.get(i).y)-15 < 170 || (f.get(i).y)-30 > f.get(t).y || f.get(i).y < f.get(t).y) {
                     Random random = new Random();
-                    f.get(i).x = (random.nextInt(401))-200;
+                    f.get(i).x = (random.nextInt(401))-180;
                     xin = x+10;
-                    f.get(i).y = (random.nextInt(401))-200;
+                    f.get(i).y = (random.nextInt(401))-180;
                     yin = y+10;
                 }
         }

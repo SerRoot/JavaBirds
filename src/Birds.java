@@ -39,6 +39,5 @@ public abstract class Birds {
         g.fillOval(xin,yin,sizein,sizein);
         yin = yin+20;
     }
-
 }
 
