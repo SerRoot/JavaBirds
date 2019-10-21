@@ -3,8 +3,8 @@ import java.awt.*;
 import java.util.Random;
 import java.util.Date;
 public abstract class Birds{
-    public int width = 700;
-    public int height = 700;
+    public int width = 400;
+    public int height = 400;
     public static int num=0;
     public  Birds(){
         num = num+1;
